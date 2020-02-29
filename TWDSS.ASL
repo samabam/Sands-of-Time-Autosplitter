@@ -2,6 +2,7 @@ state("TWD-Win64-Shipping"){
 	bool isLoading: "", 0x47CA3D0;
 	int dayCount: 0x04AD40B8, 0x8, 0x1E0, 0x28, 0x350;
 	int mapID: 0x4A77CC8;
+	int menu: 0x46664B8;
 	//int boatRide: 
 }
 
@@ -26,6 +27,11 @@ startup{
 
 //
 reset {
+	
+	if(current.menu == 6 && current.mapID == 1){
+		return true;
+	}
+	
 }
 
 //When the Prince is in the starting position and a cutscene has just been skipped, start.
@@ -99,12 +105,12 @@ switch (timer.CurrentSplitIndex)
 					
 					break;
 				case 10: //New Orleans Shout
-					if(current.mapID == 35){
+					if(current.mapID == 35 || current.mapID == 34){
 					return true;
 					}
 					break;					
 				case 11: //End
-					if(current.dayCount == 19){
+					if(current.dayCount >= 10){
 					return true;
 					}
 					break;		
