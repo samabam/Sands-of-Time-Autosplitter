@@ -49,76 +49,6 @@ split{
 
 switch(timer.Run.GetExtendedCategoryName())
 	{
-		case "Glitchless%":
-			switch (timer.CurrentSplitIndex)
-					{
-						case 0: //Tutorial
-							if(current.mapID == 14){
-							return true;
-							}
-							break;
-						case 1: //Day 1
-							if(current.dayCount == 2){
-							return true;
-							}
-							break;
-						case 2: //Day 2
-							if(current.dayCount == 3){
-							return true;
-							}
-							break;
-						case 3: //Day 3
-							if(current.dayCount == 4){
-							return true;
-							}
-							break;
-						case 4: //Day 4
-							if(current.dayCount == 5){
-							return true;
-							}
-							break;
-						case 5: //Day 5
-							if(current.dayCount == 6){
-							return true;
-							}
-							break;
-						case 6: //Day 6
-							if(current.dayCount == 7){
-							return true;
-							}
-							break;
-						case 7: //Day 7
-							if(current.dayCount == 8){
-							return true;
-							}
-							break;
-						case 8: //Day 8
-							if(current.dayCount == 9){
-							return true;
-							}
-							break;
-						case 9: //Bastion
-							if(current.mapID == 14){
-							vars.beenBastion = true;
-							}
-							
-							if(vars.beenBastion == true && current.mapID == 11){
-							return true;
-							}
-							
-							break;
-						case 10: //New Orleans Shout
-							if(current.mapID < 11 || current.mapID > 13){
-							return true;
-							}
-							break;					
-						case 11: //End
-							if(current.dayCount >= 10){
-							return true;
-							}
-							break;		
-					}
-				break;
 		case "Any%":
 			switch (timer.CurrentSplitIndex)
 					{
@@ -178,7 +108,7 @@ switch(timer.Run.GetExtendedCategoryName())
 							
 							break;
 						case 10: //New Orleans Shout
-							if(current.mapID < 11 || current.mapID > 13){
+							if(current.mapID < 8 || current.mapID > 13){
 							return true;
 							}
 							break;					
