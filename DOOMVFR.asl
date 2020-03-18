@@ -20,6 +20,9 @@ isLoading
 	if(current.mapID == 0 && current.mapID2 == 3){
 		return true;
 	}
+	if(current.mapID == 0 && current.mapID2 == 0){
+		return true;
+	}
 	return false;
 }
 
