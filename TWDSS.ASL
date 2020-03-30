@@ -49,7 +49,7 @@ split{
 
 switch(timer.Run.GetExtendedCategoryName())
 	{
-		case "Any%":
+		case "Any% (No OoB)":
 			switch (timer.CurrentSplitIndex)
 					{
 						case 0: //Tutorial
@@ -118,6 +118,22 @@ switch(timer.Run.GetExtendedCategoryName())
 							}
 							break;		
 					}
-				break;		
+				break;
+				
+		case "Any% (Standard)":
+			switch (timer.CurrentSplitIndex)
+					{
+						case 0: //Tutorial
+							if(current.mapID == 14){
+							return true;
+							}
+							break;
+						case 1: //End
+							if(current.dayCount >= 2){
+							return true;
+							}
+							break;				
+					}
+				break;				
 	}
 }
