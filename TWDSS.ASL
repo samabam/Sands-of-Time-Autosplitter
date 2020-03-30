@@ -1,6 +1,6 @@
 state("TWD-Win64-Shipping"){
 	bool isLoading: "", 0x4B4CD80;
-	int dayCount: 0x04AD40B8, 0x8, 0x1E0, 0x28, 0x350;
+	int dayCount: 0x04B0AB98, 0x8, 0x1E0, 0x40, 0x80, 0x0, 0x3C;
 	int mapID: 0x4AAE2F0;
 	int menu: 0x496C2B8;
 }
@@ -113,26 +113,27 @@ switch(timer.Run.GetExtendedCategoryName())
 							}
 							break;					
 						case 11: //End
-							if(current.dayCount >= 10 && current.dayCount >= 25){
+							if(current.dayCount >= 10){
 							return true;
 							}
-							break;		
+							break;		 
 					}
 				break;
 				
 		case "Any% (Standard)":
 			switch (timer.CurrentSplitIndex)
 					{
-						case 0: //Tutorial
+						case 0: //Day 1
 							if(current.mapID == 14){
 							return true;
 							}
 							break;
-						case 1: //End
-							if(current.dayCount >= 2 && current.dayCount >= 25){
+							
+						case 1: //Day 1
+							if(current.dayCount == 9){
 							return true;
 							}
-							break;				
+							break;
 					}
 				break;				
 	}
