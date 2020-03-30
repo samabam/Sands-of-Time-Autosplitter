@@ -113,7 +113,7 @@ switch(timer.Run.GetExtendedCategoryName())
 							}
 							break;					
 						case 11: //End
-							if(current.dayCount >= 10){
+							if(current.dayCount >= 10 && current.dayCount >= 25){
 							return true;
 							}
 							break;		
@@ -129,7 +129,7 @@ switch(timer.Run.GetExtendedCategoryName())
 							}
 							break;
 						case 1: //End
-							if(current.dayCount >= 2){
+							if(current.dayCount >= 2 && current.dayCount >= 25){
 							return true;
 							}
 							break;				
