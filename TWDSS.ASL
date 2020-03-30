@@ -1,8 +1,8 @@
 state("TWD-Win64-Shipping"){
-	bool isLoading: "", 0x47CA3D0;
+	bool isLoading: "", 0x4B4CD80;
 	int dayCount: 0x04AD40B8, 0x8, 0x1E0, 0x28, 0x350;
-	int mapID: 0x4A77CC8;
-	int menu: 0x46664B8;
+	int mapID: 0x4AAE2F0;
+	int menu: 0x496C2B8;
 }
 
 init{
