@@ -1,6 +1,7 @@
 state("TWD-Win64-Shipping"){
 	bool isLoading: "", 0x4B4CD80;
-	int dayCount: 0x04B0AB98, 0x8, 0x1E0, 0x40, 0x80, 0x0, 0x3C;
+	int dayCount: 0x04B0BD90, 0x160, 0x280, 0x28, 0x350;
+	int dayCount2: 0x04B0AB98, 0x8, 0x1E0, 0x28, 0x190, 0x18;	
 	int mapID: 0x4AAE2F0;
 	int menu: 0x496C2B8;
 }
@@ -58,42 +59,42 @@ switch(timer.Run.GetExtendedCategoryName())
 							}
 							break;
 						case 1: //Day 1
-							if(current.dayCount == 2){
+							if(current.dayCount == 2 || current.dayCount2 == 2){
 							return true;
 							}
 							break;
 						case 2: //Day 2
-							if(current.dayCount == 3){
+							if(current.dayCount == 3 || current.dayCount2 == 3){
 							return true;
 							}
 							break;
 						case 3: //Day 3
-							if(current.dayCount == 4){
+							if(current.dayCount == 4 || current.dayCount2 == 4){
 							return true;
 							}
 							break;
 						case 4: //Day 4
-							if(current.dayCount == 5){
+							if(current.dayCount == 5 || current.dayCount2 == 5){
 							return true;
 							}
 							break;
 						case 5: //Day 5
-							if(current.dayCount == 6){
+							if(current.dayCount == 6 || current.dayCount2 == 6){
 							return true;
 							}
 							break;
 						case 6: //Day 6
-							if(current.dayCount == 7){
+							if(current.dayCount == 7 || current.dayCount2 == 7){
 							return true;
 							}
 							break;
 						case 7: //Day 7
-							if(current.dayCount == 8){
+							if(current.dayCount == 8 || current.dayCount2 == 8){
 							return true;
 							}
 							break;
 						case 8: //Day 8
-							if(current.dayCount == 9){
+							if(current.dayCount == 9 || current.dayCount2 == 9){
 							return true;
 							}
 							break;
@@ -113,7 +114,7 @@ switch(timer.Run.GetExtendedCategoryName())
 							}
 							break;					
 						case 11: //End
-							if(current.dayCount >= 10){
+							if(current.dayCount == 17 || current.dayCount2 == 17){
 							return true;
 							}
 							break;		 
@@ -130,7 +131,7 @@ switch(timer.Run.GetExtendedCategoryName())
 							break;
 							
 						case 1: //Day 1
-							if(current.dayCount == 9){
+							if(current.dayCount == 9 || current.dayCount2 == 9){
 							return true;
 							}
 							break;
