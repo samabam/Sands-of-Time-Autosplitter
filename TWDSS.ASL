@@ -45,7 +45,6 @@ start {
 
 split{
 
-
 //In the case of each split, looking for qualifications to complete the split.
 
 switch(timer.Run.GetExtendedCategoryName())
@@ -61,7 +60,7 @@ switch(timer.Run.GetExtendedCategoryName())
 						case 1: //Day 1
 							if(current.dayCount == 2 || current.dayCount2 == 2){
 							return true;
-							}
+							} 
 							break;
 						case 2: //Day 2
 							if(current.dayCount == 3 || current.dayCount2 == 3){
