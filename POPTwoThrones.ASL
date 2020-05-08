@@ -27,7 +27,7 @@ split{
 	
 	switch(timer.Run.GetExtendedCategoryName())
 	{
-		case "Any% (Normal)":
+		case "Any% (Standard)":
 			switch (timer.CurrentSplitIndex)
 			{
 			//The Harbor District
@@ -432,7 +432,7 @@ split{
 		}
 		break;
 		
-		case "All Powers (Normal)":
+		case "All Powers (Standard)":
 			switch (timer.CurrentSplitIndex)
 			{
 			//The Harbor District
