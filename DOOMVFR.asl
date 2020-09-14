@@ -89,7 +89,7 @@ switch(timer.Run.GetExtendedCategoryName())
 							}
 							break;
 						case 7: //
-							if(current.opacity == 1){
+							if(current.opacity >= .99){
 							return true;
 							}
 							break;
